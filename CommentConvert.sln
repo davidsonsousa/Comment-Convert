@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentConvert.Core", "CommentConvert.Core\CommentConvert.Core.csproj", "{8AF4D399-44A9-4DDA-80D5-7FCDA0D3A64B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentConvert.Ui", "CommentConvert.Ui\CommentConvert.Ui.csproj", "{C952554C-8E4C-41BE-B8A6-ED9F880243EE}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8AF4D399-44A9-4DDA-80D5-7FCDA0D3A64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AF4D399-44A9-4DDA-80D5-7FCDA0D3A64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AF4D399-44A9-4DDA-80D5-7FCDA0D3A64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AF4D399-44A9-4DDA-80D5-7FCDA0D3A64B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C952554C-8E4C-41BE-B8A6-ED9F880243EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C952554C-8E4C-41BE-B8A6-ED9F880243EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C952554C-8E4C-41BE-B8A6-ED9F880243EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
