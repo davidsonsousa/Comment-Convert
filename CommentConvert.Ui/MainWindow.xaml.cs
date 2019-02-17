@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using CommentConvert.Ui.Core;
+using CommentConvert.Ui.Models;
+using Newtonsoft.Json;
+using System.Windows;
 
 namespace CommentConvert.Ui
 {
@@ -16,7 +19,15 @@ namespace CommentConvert.Ui
 
         private void BtnProcessComments_Click(object sender, RoutedEventArgs e)
         {
-            throw new System.NotImplementedException();
+            var (IsError, Result) = Utilities.LoadFacebookComments(txtArticleUrls.Text, txtToken.Text);
+
+            if (IsError)
+            {
+                MessageBox.Show(Result, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            var fbComment = JsonConvert.DeserializeObject<FbComment>(Result);
         }
     }
 }
