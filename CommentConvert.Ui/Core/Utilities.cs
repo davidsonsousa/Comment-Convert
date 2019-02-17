@@ -1,10 +1,11 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 
 namespace CommentConvert.Ui.Core
 {
     public static class Utilities
     {
-        public static string LoadFacebookComments(string articleUrl, string token)
+        public static (bool IsError, string Result) LoadFacebookComments(string articleUrl, string token)
         {
             string url = string.Format(Constants.GraphUrl, articleUrl, token);
 
@@ -12,12 +13,16 @@ namespace CommentConvert.Ui.Core
             {
                 using (var client = new WebClient())
                 {
-                    return client.DownloadString(url);
+                    return (false, client.DownloadString(url));
                 }
             }
-            catch
+            //catch (WebException ex)
+            //{
+            //    return (true, ex.Message);
+            //}
+            catch (Exception ex)
             {
-                throw;
+                return (true, ex.Message);
             }
         }
     }
