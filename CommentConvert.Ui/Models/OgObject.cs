@@ -1,7 +1,10 @@
-﻿namespace CommentConvert.Ui.Models
+﻿using Newtonsoft.Json;
+
+namespace CommentConvert.Ui.Models
 {
     public sealed class OgObject : BaseObject
     {
-        public Comment Comments { get; set; }
+        [JsonProperty(PropertyName = "comments")]
+        public Comment Comment { get; set; }
     }
 }
