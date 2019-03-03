@@ -1,0 +1,34 @@
+﻿    <item>
+      <!-- title of article -->
+      <title>{{TITLE}}</title>
+      <!-- absolute URI to article -->
+      <link>{{URL}}</link>
+      <!-- body of the page or post; use cdata; html allowed (though will be formatted to DISQUS specs) -->
+      <!--<content:encoded><![CDATA[{{BODY}}]]></content:encoded>-->
+      <!-- value used within disqus_identifier; usually internal identifier of article -->
+      <!--<dsq:thread_identifier>{{GUID}}</dsq:thread_identifier>-->
+      <!-- creation date of thread (article), in GMT. Must be YYYY-MM-DD HH:MM:SS 24-hour format. -->
+      <!--<wp:post_date_gmt>{{DATE_CREATION}}</wp:post_date_gmt>-->
+      <!-- open/closed values are acceptable -->
+      <wp:comment_status>open</wp:comment_status>
+      <wp:comment>
+        <!-- internal id of comment -->
+        <wp:comment_id>{{COMMENT_ID}}</wp:comment_id>
+        <!-- author display name -->
+        <wp:comment_author>{{AUTHOR_NAME}}</wp:comment_author>
+        <!-- author email address -->
+        <!--<wp:comment_author_email>{{AUTHOR_EMAIL}}</wp:comment_author_email>-->
+        <!-- author url, optional -->
+        <!--<wp:comment_author_url>{{AUTHOR_URL}}</wp:comment_author_url>-->
+        <!-- author ip address -->
+        <!--<wp:comment_author_IP>{{AUTHOR_IP}}</wp:comment_author_IP>-->
+        <!-- comment datetime, in GMT. Must be YYYY-MM-DD HH:MM:SS 24-hour format. -->
+        <wp:comment_date_gmt>{{COMMENT_DATE}}</wp:comment_date_gmt>
+        <!-- comment body; use cdata; html allowed (though will be formatted to DISQUS specs) -->
+        <wp:comment_content><![CDATA[{{COMMENT_BODY}}]]></wp:comment_content>
+        <!-- is this comment approved? 0/1 -->
+        <wp:comment_approved>1</wp:comment_approved>
+        <!-- parent id (match up with wp:comment_id) -->
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+    </item>
