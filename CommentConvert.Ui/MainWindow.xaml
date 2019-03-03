@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CommentConvert.Ui"
         mc:Ignorable="d"
-        Title="MainWindow" Height="331.953" Width="534.616">
+        Title="MainWindow" Height="330.644" Width="740.859">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
@@ -24,7 +24,7 @@
                " VerticalAlignment="Top"/>
         <Button x:Name="btnProcessComments" Content="Process comments" Grid.Column="1" Grid.Row="3" VerticalAlignment="Bottom" Height="28" HorizontalAlignment="Right" Width="130" MinWidth="130" MinHeight="28"/>
         <DockPanel Margin="0" Grid.Row="2" Grid.ColumnSpan="2">
-            <TextBox x:Name="txtArticleUrls" Margin="10,0,0,0" TextWrapping="Wrap" DockPanel.Dock="Top" Height="Auto"/>
+            <TextBox x:Name="txtArticleUrls" Margin="10,0,0,0" DockPanel.Dock="Top" Height="Auto" AcceptsReturn="True"/>
         </DockPanel>
     </Grid>
 </Window>

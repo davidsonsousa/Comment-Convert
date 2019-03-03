@@ -6,5 +6,7 @@ namespace CommentConvert.Ui.Models
     {
         [JsonProperty(PropertyName = "comments")]
         public Comment Comment { get; set; }
+
+        public string Title { get; set; }
     }
 }
